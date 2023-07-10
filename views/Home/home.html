@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="home.css" type="text/css" />
+</head>
+<body>
+    <h1>Welcome home</h1>
+    <form >
+        <input type="range" class="slider" min="0" max="50" step="1" value="0" oninput="updateValue(this.value, 'row')">
+        <p>Row size: <span id="row">0</span></p>
+
+        <input type="range" class="slider" min="0" max="50" step="1" value="0" oninput="updateValue(this.value, 'col')">
+        <p>Col size: <span id="col">0</span></p>
+        <button onclick="handleSubmit(event)">Submit</button>
+    </form>
+
+    <script src="home.js"></script>
+</body>
+</html>
