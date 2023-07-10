@@ -1,0 +1,13 @@
+body {
+    background-color: aliceblue;
+}
+
+.box { 
+    height: 50px;
+    width: 50px;
+    background-color: red;
+    position: relative;
+    border: black solid 1px;
+    margin: 5px;
+    display: inline-block;
+}
